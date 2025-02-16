@@ -1,5 +1,7 @@
 import { Box, Button, styled, Typography } from "@mui/material";
 import Header from "../components/Header"
+import { useNavigate } from "react-router-dom";
+import { routePath } from "../routes/route";
 const Component = styled(Box)({
     display: 'flex',
     alignItems: 'center',
@@ -28,6 +30,7 @@ const Component = styled(Box)({
 })
 
 const Home = () => {
+    const navigate = useNavigate();
     const animatedImage = "https://images.ctfassets.net/pdf29us7flmy/5r34jiS1YfJuoRzqp3XH6y/6fba6547e16cd0ad08ae28dad306015d/Screen_Shot_2023-01-11_at_9.21.31_AM.png?w=720&q=100&fm=avif";
 
     return (
@@ -36,7 +39,7 @@ const Home = () => {
             <Component>
                 <Box>
                     <Typography>Find trusted HouseHelp<br/>Quickly and Easily</Typography>
-                    <Button variant="contained">Post a Job</Button>
+                    <Button variant="contained" onClick={() => navigate(routePath.create)}>Post a Job</Button>
                 </Box>
                 <Box>
                     <img src={animatedImage} alt="home" style={{width: 600}}/>
