@@ -57,7 +57,7 @@ const options = {
 
 const CreatePost = () => {
     const [data, setData] = useState(defaultObj);
-    const image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH3zkKYlIHjjoQrE4e-a5xiJIaK0reWlcDhewsx8rjV87d8M82";
+    const image = "HH.png";
 
     const handleChange = (e) => {
         setData({...data, [e.target.name]: e.target.value});
@@ -75,7 +75,7 @@ const CreatePost = () => {
         <Component>
             <Container>
                 <Typography>Create a Job Post</Typography>
-                <img src={image} alt="create"/>
+                <img src={image} alt="create" style={{width: 400, height: 350}}/>
             </Container>
             <FormWrapper>
                 <TextField
