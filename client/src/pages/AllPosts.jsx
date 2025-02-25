@@ -84,8 +84,10 @@ const AllPosts = () => {
                                 >
                                     {post.description.length > 150 ? post.description.substring(0, 150) + "..." : post.description}
                                 </Typography>
-                                <Typography><b>Experience:</b>{post.experience}</Typography>
-                                <Typography><b>Skills:</b>{post.skills}</Typography>
+                                <Typography><b>Experience:</b> {post.experience}</Typography>
+                                <Typography><b>Skills:</b> {post.skills}</Typography>
+                                <Typography><b>Location:</b> {post.location}</Typography>
+                                <Typography><b>Contact:</b> {post.contact}</Typography>
                                 <Typography
                                     style={{ marginTop: 'auto', color: '#6f6f6f' }}
                                 >Posted on: {new Date(post.createdAt).toLocaleDateString()}</Typography>

@@ -24,6 +24,7 @@ public class PostServiceImpl implements PostService{
         postModel.setType(postDTO.getType());
         postModel.setExperience(postDTO.getExperience());
         postModel.setLocation(postDTO.getLocation());
+        postModel.setContact(postDTO.getContact());
 
         return postDao.save(postModel);
     }

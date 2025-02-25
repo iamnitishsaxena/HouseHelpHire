@@ -33,6 +33,9 @@ public class PostModel {
     @NotNull
     private String location;
 
+    @NotNull
+    private String contact;
+
     @CreatedDate
     private Date createdAt;
 }

@@ -12,4 +12,5 @@ public class PostDTO {
     private String[] skills;
     private String salary;
     private String location;
+    private String contact;
 }

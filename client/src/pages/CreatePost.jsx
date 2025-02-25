@@ -45,6 +45,7 @@ const defaultObj = {
     skills: [],
     salary: '',
     location: '',
+    contact: '',
 }
 
 const options = {
@@ -120,6 +121,11 @@ const CreatePost = () => {
                     handleChange={handleChange}
                     name="salary"
                     options={options.salary}
+                />
+                <TextField
+                    placeholder="Contact Information"
+                    name="contact"
+                    onChange={handleChange}
                 />
                 <TextField
                     placeholder="Job Location"
