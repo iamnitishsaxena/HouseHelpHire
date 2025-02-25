@@ -25,10 +25,13 @@ public class PostModel {
     private String experience;
 
     @NotNull
-    private String technology [];
+    private String[] skills;
 
     @NotNull
     private String salary;
+
+    @NotNull
+    private String location;
 
     @CreatedDate
     private Date createdAt;

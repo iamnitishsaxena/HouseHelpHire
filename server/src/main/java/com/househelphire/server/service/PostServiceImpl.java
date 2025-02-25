@@ -20,9 +20,10 @@ public class PostServiceImpl implements PostService{
         postModel.setProfile(postDTO.getProfile());
         postModel.setDescription(postDTO.getDescription());
         postModel.setSalary(postDTO.getSalary());
-        postModel.setTechnology(postDTO.getTechnology());
+        postModel.setSkills(postDTO.getSkills());
         postModel.setType(postDTO.getType());
         postModel.setExperience(postDTO.getExperience());
+        postModel.setLocation(postDTO.getLocation());
 
         return postDao.save(postModel);
     }

@@ -9,7 +9,7 @@ public class PostDTO {
     private String type;
     private String description;
     private String experience;
-    private String technology [];
+    private String[] skills;
     private String salary;
-
+    private String location;
 }

@@ -21,9 +21,7 @@ public class PostController {
     @PostMapping(APIConstants.SAVE_POST)
     public PostModel savePost(@Valid @RequestBody PostDTO postDTORequest){
         log.info("Saving Post ######");
-
         return this.postService.savePost(postDTORequest);
-
     }
 
     @GetMapping(APIConstants.GET_ALL_POSTS)
